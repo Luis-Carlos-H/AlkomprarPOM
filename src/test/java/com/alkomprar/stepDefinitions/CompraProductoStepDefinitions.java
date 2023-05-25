@@ -22,11 +22,11 @@ public class CompraProductoStepDefinitions {
         inicioStep.abrirUrl();
         inicioStep.cerrarCoo();
     }
-    @Cuando("Ingresar producto a buscar en la barra de busqueda")
+    @Cuando("ingresar producto a buscar en la barra de busqueda")
     public void ingresarProductoABuscarEnLaBarraDeBusqueda() throws IOException {
         inicioStep.busqueda();
     }
-    @Cuando("Seleccionar de forma aleatoria un producto y Agregarlo al carrito")
+    @Cuando("seleccionar de forma aleatoria un producto y Agregarlo al carrito")
     public void seleccionarDeFormaAleatoriaUnProductoYAgregarloAlCarrito() {
         productosStep.clicProducto();
     }

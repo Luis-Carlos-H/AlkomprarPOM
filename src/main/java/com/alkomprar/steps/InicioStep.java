@@ -19,7 +19,7 @@ public class InicioStep {
         String url=data.get(0).get("Url");
         inicioPage.openUrl(url);
     }
-    @Step("cerrar cookies")
+    @Step("Cerrar cookies")
     public void cerrarCoo(){
         inicioPage.buttonCookie.click();
     }
@@ -28,7 +28,7 @@ public class InicioStep {
     inicioPage.idCuenta.click();
     }
 
-    @Step("escribir en busqueda")
+    @Step("Escribir en busqueda")
     public void busqueda() throws IOException {
         ArrayList<Map<String, String>> data = Excel.leerDatosDeHojaDeExcel("Data.xlsx", "Categoria");
         Random random= new Random();
@@ -37,7 +37,7 @@ public class InicioStep {
         inicioPage.inputBusqueda.type(categoria);
         inicioPage.inputBusqueda.click();
         inicioPage.inputBusqueda.sendKeys(Keys.ENTER);
-        final long implicitTimeoutInMilliseconds = inicioPage.inputBusqueda.getImplicitTimeoutInMilliseconds();
+        inicioPage.inputBusqueda.getImplicitTimeoutInMilliseconds();
     }
 
 }

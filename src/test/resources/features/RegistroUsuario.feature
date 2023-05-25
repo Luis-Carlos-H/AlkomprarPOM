@@ -1,7 +1,7 @@
 #language: es
-Característica: Registro Usuario
+Característica: Registro de usuario
   @Registro
-  Escenario: Registrar exitoso Usuario
+  Escenario: Registro de ususario exitoso
     Dado que el usuario abra la url en el navegador
-    Cuando Ingresar un usuari Registrado
+    Cuando ingresar un correo valido
     Entonces podrá validar el Iniciar sesion

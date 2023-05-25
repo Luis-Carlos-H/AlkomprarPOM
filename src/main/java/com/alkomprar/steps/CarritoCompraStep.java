@@ -8,7 +8,7 @@ import org.fluentlenium.core.annotation.Page;
 public class CarritoCompraStep {
     @Page
     CarritoCompraPage carritoCompraPage;
-    @Step("validar compra")
+    @Step("Validar compra")
     public void validarCarrito(){
         carritoCompraPage.element(carritoCompraPage.classCarrito);
         EsperaImplicita.esperaImplicita(5);

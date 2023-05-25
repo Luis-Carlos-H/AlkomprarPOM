@@ -8,7 +8,5 @@ import net.serenitybdd.core.pages.WebElementFacade;
 public class IngresarCorreoPage extends PageObject {
     @FindBy(how = How.ID, using = "js-login-email")
     public WebElementFacade idIngresarCorreo;
-    @FindBy(how = How.ID, using = "js-login-continue")
-    public WebElementFacade idContinuarCorreo;
 
 }

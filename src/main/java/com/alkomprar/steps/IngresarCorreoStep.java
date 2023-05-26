@@ -19,7 +19,7 @@ public class IngresarCorreoStep {
         String correo=data.get(indice).get("Correo");
         ingresarCorreoPage.idIngresarCorreo.type(correo);
         ingresarCorreoPage.idIngresarCorreo.sendKeys(Keys.ENTER);
-        EsperaImplicita.esperaImplicita(5);
+
     }
 
 }

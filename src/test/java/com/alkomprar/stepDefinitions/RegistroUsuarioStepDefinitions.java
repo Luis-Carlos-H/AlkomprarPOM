@@ -7,7 +7,7 @@ import io.cucumber.java.es.Cuando;
 import net.thucydides.core.annotations.Steps;
 import java.io.IOException;
 
-public class RegistroUsuario {
+public class RegistroUsuarioStepDefinitions {
     @Steps
     DatosRegistroStep datosRegistroStep;
     @Steps

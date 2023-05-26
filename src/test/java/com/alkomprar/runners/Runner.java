@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/features/CompraProducto.feature","src/test/resources/features/InicioSesion.feature","src/test/resources/features/RegistroUsuario.feature"},
         glue = "com.alkomprar.stepDefinitions",
-        //tags ="@Registro",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class Runner {

@@ -1,7 +1,6 @@
 package com.alkomprar.steps;
 
 import com.alkomprar.pages.IngresarCorreoPage;
-import com.alkomprar.utils.EsperaImplicita;
 import com.alkomprar.utils.Excel;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;
@@ -17,9 +16,7 @@ public class IngresarCorreoStep {
     public void IntCorreo(int indice) throws IOException{
         ArrayList<Map<String, String>> data = Excel.leerDatosDeHojaDeExcel("Data.xlsx", "Datos");
         String correo=data.get(indice).get("Correo");
-        ingresarCorreoPage.idIngresarCorreo.type(correo);
-        ingresarCorreoPage.idIngresarCorreo.sendKeys(Keys.ENTER);
-
+        ingresarCorreoPage.idIngresarCorreo.sendKeys(correo,Keys.ENTER);
     }
 
 }

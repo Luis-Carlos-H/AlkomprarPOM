@@ -37,7 +37,6 @@ public class InicioStep {
         inicioPage.inputBusqueda.type(categoria);
         inicioPage.inputBusqueda.click();
         inicioPage.inputBusqueda.sendKeys(Keys.ENTER);
-        inicioPage.inputBusqueda.getImplicitTimeoutInMilliseconds();
     }
 
 }
